@@ -13,3 +13,9 @@ def finc_common_elements(matrix):
 
 print(finc_common_elements([[1,2,3,4,5],[2,3,5,8,10],[3,5,7,9,11],[1,3,5,7,9]]))        
 
+keydict={'x':1,'b':5,'a':3}
+sortedKeys=(sorted(keydict))
+sortedValues=sorted(keydict,key=keydict.get)
+print(sortedKeys)
+print(" ==== ")
+print(sortedValues)
