@@ -10,5 +10,6 @@ def twosumSorted(nums,target):
             left+=1
         else :
             right-=1
+
     return []
 print(twosumSorted([2,7,11,15],9))
