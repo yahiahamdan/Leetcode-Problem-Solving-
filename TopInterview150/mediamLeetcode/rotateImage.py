@@ -21,4 +21,12 @@ def rotateImage(mat):
  return newMatrix 
 
 print(rotateImage([[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]))
-          
+def rotateImage2(mat):
+        for i in range(len(mat)):
+            for j in range(i+1,len(mat[i])):
+               mat[i][j],mat[j][i]=mat[j][i],mat[i][j]
+        for i in range(len(mat)):
+            mat[i].reverse()
+        return mat
+
+        
