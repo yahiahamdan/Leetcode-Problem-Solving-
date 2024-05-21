@@ -9,6 +9,6 @@ def groupAnagram(words):
         anagrams[sortedWord].append(words[word])
     else:
        anagrams[sortedWord]=[words[word]]
-  print(anagrams.values())
+  return list(anagrams.values())
 
 groupAnagram(["eat","tea","tan","ate","nat","bat"])

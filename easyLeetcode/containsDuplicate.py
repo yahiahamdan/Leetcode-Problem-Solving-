@@ -6,4 +6,4 @@ class Solution(object):
                    return True
                dic[nums[i]]=True
             return False             
-                
+
