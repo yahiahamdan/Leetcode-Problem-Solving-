@@ -1,6 +1,6 @@
 def groupAnagram(words):
 
-  #create a dictionary {}
+  #updating the probelem of group anagrams
   anagrams={}
   for word in range(len(words)):
     #sort the word 
