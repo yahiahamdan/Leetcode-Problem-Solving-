@@ -52,3 +52,30 @@ def threeSum2(nums):
             right-=1
     return result
 print(threeSum2(list))
+
+
+def threeSum(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[List[int]]
+        """
+        #[-4,-1,-1,0,1,2]
+        res=[]
+        nums.sort()
+        for i in range(len(nums)):
+            if i >0  and nums[i-1]==nums[i]:
+                continue
+            l=i+1
+            r=len(nums)-1
+            while l <r :
+                threesum=nums[i]+nums[l]+nums[r]
+                if threesum > 0:
+                  r-=1
+                elif threesum<0:
+                  l+=1
+                else:
+                  res.append([nums[i],nums[l],nums[r]])
+                  l+=1
+                  while nums[l] == nums[l-1] and l < r:
+                      l+=1
+        return res
