@@ -10,11 +10,42 @@ print(customSort("A1b2xe3"))
 def customsort2(s):
     for i in range(len(s)):
         if s[i].isdigit():
-          return (0,s[i])
+          return [0,s[i]]
         elif s[i].isupper():
-            return (1,s[i])
+            return [1,s[i]]
         else:
-            return (2,s[i])
+            return [2,s[i]]
 
 s="A1b2xe3"
 print(''.join(sorted(s,key=customsort2)))
+
+
+def customSort3(string1):
+     digitList=[s for s in string1 if s.isdigit()]
+     smallerLetter=[s for s in string1 if s.islower()]
+     capitalLetter=[s for s in string1 if s.isupper()]
+     digitList.sort()
+     smallerLetter.sort()
+     capitalLetter.sort()
+     newword= ''.join(digitList+smallerLetter+capitalLetter)
+     return newword
+print(customSort3("aX123BDEbc"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
