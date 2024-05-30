@@ -1,10 +1,5 @@
 class Solution(object):
     def findSubstring(self, s, words):
-          """
-          :type s: str
-          :type words: List[str]
-          :rtype: List[int]
-          """
           word_len=len(words[0])
           noOfWords=len(words)
           result=[]
