@@ -1,8 +1,11 @@
 from functools import cmp_to_key
+""""
+i need to sort by doing 330 > 303
+"""
 class Solution(object):
    
     def largestNumber(self, nums):
-        """
+        """ 
         :type nums: List[int]
         :rtype: str
         """
