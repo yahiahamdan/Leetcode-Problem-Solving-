@@ -1,3 +1,4 @@
+#brute force solution to solve this type of problem 0(npow3)
 def isPlaindrome(string):
     news=string[::-1]
     return news==string
