@@ -2,6 +2,8 @@
 """
 fl problem deh  ana 3ndy rkmeen unique 
 3ayz agbhom btrea2a 2 pointer approach 
+this is the brute force solution of the problem 
+
 """
 
 def singleNumber(nums):
