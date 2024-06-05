@@ -18,3 +18,18 @@ def validString(string):
   return res
 
 print(validString("aaaabcdddeeee"))
+
+#decodeStrng 
+def decodeString(string):
+     newstring=""
+     word=""
+     multipler=1
+     for c in string:
+          if c.isdigit():
+               multipler= int(c)
+          else:
+               newstring+=c*multipler
+               multipler=1
+     return newstring
+print(decodeString("a3b4cd"))
+        
