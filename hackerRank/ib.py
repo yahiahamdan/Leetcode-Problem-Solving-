@@ -34,5 +34,11 @@ def getMovieData(title ,year):
         return -1
     return data[0].get('imdbID',-1)
 
-print(getMovieData("spiderman",2010))
+#print(getMovieData("spiderman",2010))
 
+def getMoviesHeader():
+    url=f"https://jsonmock.hackerrank.com/api/movies/search/"
+    response=requests.get(url)
+    print(response.headers)
+
+getMoviesHeader()
