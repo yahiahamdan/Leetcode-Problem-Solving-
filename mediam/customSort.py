@@ -32,6 +32,14 @@ def customSort3(string1):
 print(customSort3("aX123BDEbc"))
 
 
+def customsort4(list1,list2):
+    list1.sort()
+    list2.sort()
+    return list1+list2
+print(customsort4([1,5,2,8],["a","x","d","c" ]))
+
+
+
 
 
 
